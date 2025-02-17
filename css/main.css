@@ -1,0 +1,11 @@
+body {
+    background: radial-gradient(circle, 
+        rgba(255, 240, 100, 1) 10%, 
+        rgba(255, 130, 200, 1) 40%, 
+        rgba(120, 90, 255, 1) 70%, 
+        rgba(50, 220, 255, 1) 100%);
+    background-blend-mode: screen;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
