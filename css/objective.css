@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;  /* Sets the font style */
+    background-color: black;         /* Solid black background */
+    color: white;                    /* White text color */
+    height: 100vh;                   /* Full viewport height */
+    display: flex;                   /* Flexbox to align items */
+    flex-direction: column;          /* Stacks elements vertically */
+    justify-content: space-between;  /* Space between header, logo, and discover */
+    align-items: center;             /* Center aligns elements horizontally */
+    overflow: hidden;                /* Hides any content that overflows the viewport */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d3d3d3; /* Light grey like in the first page */
+}
+
+.cart-icon, .menu-toggle {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Centered Content Styling */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text, .bottom-text {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333; /* Same color scheme as before */
+}
+
+.shirt-graphic img {
+    max-width: 50%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Footer Text */
+.footer-text {
+    background-color: #e0e0e0; /* Footer color aligned with the previous footer */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000; /* Consistent black text */
+}
+
+/* Side Menu Styling */
+.menu {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #1d1d1d; /* Same dark background for menu */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: right 0.3s ease;
+}
+
+.menu.open {
+    right: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+}
+
+.close-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 10px;
+    text-align: right;
+}

@@ -1,0 +1,99 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body (main container) */
+body {
+    font-family: Arial, sans-serif;  /* Sets the font style */
+    background-color: black;         /* Solid black background */
+    color: white;                    /* White text color */
+    height: 100vh;                   /* Full viewport height */
+    display: flex;                   /* Flexbox to align items */
+    flex-direction: column;          /* Stacks elements vertically */
+    justify-content: space-between;  /* Space between header, logo, and discover */
+    align-items: center;             /* Center aligns elements horizontally */
+    overflow: hidden;                /* Hides any content that overflows the viewport */
+}
+
+/* Style for the header (top section) */
+header {
+    width: 100%;                     /* Full width of the screen */
+    display: flex;                   /* Flexbox for alignment */
+    justify-content: space-between;  /* Space between the cart icon and menu */
+    padding: 20px;                   /* Adds padding around the header */
+}
+
+/* Cart icon styling */
+.cart-icon {
+    font-size: 1.5rem;               /* Makes the cart icon larger */
+    cursor: pointer;                 /* Changes the cursor to a pointer on hover */
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+    font-size: 1.5rem;               /* Makes the menu button text larger */
+    cursor: pointer;                 /* Pointer on hover for menu */
+}
+
+/* Style for the ALIVE logo */
+.logo {
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    position: absolute;            /* Absolute positioning to center */
+    top: 50%;                      /* Move the logo 50% down the viewport */
+    left: 50%;                     /* Move the logo 50% to the right of the viewport */
+    transform: translate(-50%, -50%); /* Offset it back by 50% to perfectly center it */
+}
+
+/* Discover section styling */
+.discover {
+    font-size: 1rem;                 /* Smaller text for "Discover" */
+    text-align: center;              /* Center the text */
+    margin-bottom: 20px;             /* Adds some space at the bottom */
+    cursor: pointer;                 /* Cursor becomes a pointer over "Discover" */
+}
+
+/* Style for the hidden side menu */
+.menu {
+    position: fixed;                 /* Fixes the menu relative to the viewport */
+    top: 0;                          /* Aligns it to the top of the screen */
+    right: -250px;                   /* Positions the menu off-screen by default */
+    width: 250px;                    /* Sets the menu width */
+    height: 100%;                    /* Full height of the screen */
+    background-color: rgba(0, 0, 0, 0.9);  /* Dark background for the menu */
+    display: flex;                   /* Flexbox for vertical menu items */
+    flex-direction: column;          /* Stack menu links vertically */
+    justify-content: center;         /* Center the links vertically */
+    align-items: flex-start;         /* Align items to the left (start) */
+    padding: 20px;                   /* Adds padding inside the menu */
+    transition: right 0.3s ease-in-out;  /* Smooth transition for sliding in/out */
+}
+
+/* Links inside the menu */
+.menu a {
+    text-decoration: none;           /* Removes underline from links */
+    color: white;                    /* White text for links */
+    font-size: 1.2rem;               /* Slightly larger text */
+    padding: 10px 0;                 /* Adds space between the links */
+    display: block;                  /* Makes the links behave like block elements */
+}
+
+/* Hover effect for menu links */
+.menu a:hover {
+    color: gray;                     /* Changes link color to gray on hover */
+}
+
+/* Close menu button styling */
+.close-menu {
+    align-self: flex-end;            /* Pushes the close button to the right */
+    cursor: pointer;                 /* Pointer on hover */
+}
+
+/* Open the menu */
+.menu.open {
+    right: 0;                        /* Moves the menu into view when it's open */
+}

@@ -1,6 +1,6 @@
 body {
     background: 
-        url('C:\Users\mateo\Desktop\ProyectAlive\images\Grain.jpg') no-repeat center center / cover, /* Overlay Image */
+        /*url('../images/grain.jpg') , /* Overlay Image */
         radial-gradient(circle, 
             rgba(255, 240, 100, 0.6) 10%, 
             rgba(255, 130, 200, 0.6) 40%, 
@@ -10,3 +10,45 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+#imageContainer
+{
+    position:relative;
+    height: 1000;
+    width: 1000;
+}
+
+#imageOne
+{
+    position:absolute;
+    right: 15px;
+    bottom: 15px;
+}
+#imageTwo
+{
+    position:absolute;
+    left: 15px;
+    bottom: 15px;
+}
+#imageThree
+{
+    position:absolute;
+    right: 15px;
+    up: 15px;
+}
+#imageFour
+{
+    position:absolute;
+    left: 15px;
+    up: 15px;
+}
+#imageFive
+{
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    up: 5px;
+}
+
+
